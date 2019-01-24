@@ -1,0 +1,7 @@
+Equipment On Springs
+Eigenfrequencies and the corresponding eigenmodes 
+of a structure (beam) with equipment on springs
+This is the illustration of the rule, that mass of
+equipment should not be taken into account when
+calculating modes of rigid bearing structures (if springs are much more
+flexible than beam modes are independent).

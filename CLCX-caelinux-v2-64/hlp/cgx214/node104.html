@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2012 (1.2)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>init</TITLE>
+<META NAME="description" CONTENT="init">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2012">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node105.html">
+<LINK REL="previous" HREF="node103.html">
+<LINK REL="up" HREF="node61.html">
+<LINK REL="next" HREF="node105.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1944"
+  HREF="node105.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1940"
+  HREF="node61.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1934"
+  HREF="node103.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1942"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1945"
+  HREF="node105.html">lcmb</A>
+<B> Up:</B> <A NAME="tex2html1941"
+  HREF="node61.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html1935"
+  HREF="node103.html">int</A>
+ &nbsp; <B>  <A NAME="tex2html1943"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001043000000000000000"></A><A NAME="init"></A>
+<BR>
+init
+</H2>
+<PRE>
+   'init' &lt;internal parameters&gt;
+</PRE>
+This command defines the window and model size, the model position, rotational center, fonts and others. It is created and written to a file by the
+``<A HREF="node167.html#send">send</A>'' command. If that command changes the window dimensions and is used in a batch file, it has to be used in the first line. Otherwhise the window dimensions take only effect after the batch file was completely parsed and executed. A batch file could look like that::
+<PRE>
+  read init.fbl
+  read ccx.frd new
+  ds 1 e 1
+  plot fv all
+  hcpy png
+  quit
+</PRE>
+If the window size will not change then the command can later be executed.
+
+<P>
+<BR><HR>
+<ADDRESS>
+root
+2018-04-24
+</ADDRESS>
+</BODY>
+</HTML>

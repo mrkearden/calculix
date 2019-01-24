@@ -1,0 +1,7 @@
+Beam with Mass1
+Example for *MODAL DYNAMIC 
+and *STEADY STATE DYNAMICS
+(harmonic) calculation
+for the model with body elements
+
+

@@ -1,0 +1,9 @@
+Beam with Mass2
+Example for *MODAL DYNAMIC 
+and *STEADY STATE DYNAMICS
+(harmonic) calculation
+for the model with beam elements
+(also for shells, open the folder
+to find all files)
+
+

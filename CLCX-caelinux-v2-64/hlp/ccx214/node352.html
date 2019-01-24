@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>ABAQUS umat routines</TITLE>
+<META NAME="description" CONTENT="ABAQUS umat routines">
+<META NAME="keywords" CONTENT="ccx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="ccx.css">
+
+<LINK REL="previous" HREF="node351.html">
+<LINK REL="up" HREF="node350.html">
+<LINK REL="next" HREF="node353.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html5529"
+  HREF="node353.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html5525"
+  HREF="node350.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html5521"
+  HREF="node351.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html5527"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html5530"
+  HREF="node353.html">Calling shared libraries</A>
+<B> Up:</B> <A NAME="tex2html5526"
+  HREF="node350.html">User-defined mechanical material laws.</A>
+<B> Previous:</B> <A NAME="tex2html5522"
+  HREF="node351.html">The CalculiX interface</A>
+ &nbsp; <B>  <A NAME="tex2html5528"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00095200000000000000">
+ABAQUS umat routines</A>
+</H3>
+
+<P>
+There are two interfaces to include ABAQUS umat routines: umat_abaqus is meant
+to include linear materials, umat_abaqusnl for nonlinear materials. For
+nonlinear materials the logarithmic strain and infinitesimal rotation are
+calculated, which slows down the calculation. Consequently, the nonlinear
+routine should only be used if necessary.
+
+<P>
+The linear routine is triggered by putting ABAQUS in front of the material
+name. The total length of the material name should not exceed 80 characters,
+consequently, 74 characters are left for the proper material name. For
+instance, if the material name in the ABAQUS routine is supposed to be
+``WOOD'', you must specify ``ABAQUSWOOD'' in the CalculiX input file. The part
+``ABAQUS'' is removed from the name before entering the umat routine.
+
+<P>
+The nonlinear routine is triggered by putting ABAQUSNL in front of the
+material name. 
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html5531"
+  HREF="node353.html">Calling shared libraries</A>
+<LI><A NAME="tex2html5532"
+  HREF="node354.html">Limitations</A>
+<LI><A NAME="tex2html5533"
+  HREF="node355.html">Calling shared libraries</A>
+<LI><A NAME="tex2html5534"
+  HREF="node356.html">Limitations</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+guido dhondt
+2018-04-28
+</ADDRESS>
+</BODY>
+</HTML>

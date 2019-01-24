@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2012 (1.2)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>How to process results</TITLE>
+<META NAME="description" CONTENT="How to process results">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2012">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node234.html">
+<LINK REL="previous" HREF="node232.html">
+<LINK REL="up" HREF="node219.html">
+<LINK REL="next" HREF="node234.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html3522"
+  HREF="node234.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3518"
+  HREF="node219.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3512"
+  HREF="node232.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3520"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3523"
+  HREF="node234.html">How to deal with</A>
+<B> Up:</B> <A NAME="tex2html3519"
+  HREF="node219.html">Tips and Hints</A>
+<B> Previous:</B> <A NAME="tex2html3513"
+  HREF="node232.html">How to run cgx</A>
+ &nbsp; <B>  <A NAME="tex2html3521"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001714000000000000000"></A><A NAME="How_to_process_results"></A>
+<BR>
+How to process results
+</H2>
+The node results can be modified or used to generate derived results. There are basically three levels of operations.
+
+<P>
+The easiest one is to just multiply with a factor, add a number or use an exponent to all node results of a certain dataset with the ''<A HREF="node78.html#ds">ds</A>'' command.
+
+<P>
+The next level is using variables which can be used to do calculations based on results and can be written back to an existion dataset or a new one. This requires a good knowledge of the way cgx works and of the necessary commands (''<A HREF="node102.html#if">if</A>'', ''<A HREF="node194.html#while">while</A>'', ''<A HREF="node179.html#stack">stack</A>'', ''<A HREF="node191.html#valu">valu</A>'', ''<A HREF="node84.html#enq">enq</A>'', ''<A HREF="node134.html#prnt">prnt</A>'', ''<A HREF="node78.html#ds">ds</A>'', ''<A HREF="node183.html#sys">sys</A>'' etc.). In this way data can be written to a file with the ``<A HREF="node183.html#sys">sys</A>'' command (using echo) were an external program might be invoked by the ``sys'' command which in turn could provide data for cgx.
+
+<P>
+Finally, complex operations can be coded in C in the file userFunction.c. The
+user function is activated by the ''<A HREF="node68.html#call">call</A>'' command. A new
+compilation of cgx is required unless a dynamically linked library is used.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3522"
+  HREF="node234.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3518"
+  HREF="node219.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3512"
+  HREF="node232.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3520"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3523"
+  HREF="node234.html">How to deal with</A>
+<B> Up:</B> <A NAME="tex2html3519"
+  HREF="node219.html">Tips and Hints</A>
+<B> Previous:</B> <A NAME="tex2html3513"
+  HREF="node232.html">How to run cgx</A>
+ &nbsp; <B>  <A NAME="tex2html3521"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+root
+2018-04-24
+</ADDRESS>
+</BODY>
+</HTML>

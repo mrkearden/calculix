@@ -1,0 +1,7 @@
+Start And Stop
+Example for *MODAL DYNAMIC 
+Open Folder to see all files
+(theoretical solution is provided
+with Scilab)
+
+
